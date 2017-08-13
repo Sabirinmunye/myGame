@@ -1,0 +1,80 @@
+h1 {
+padding-top: 30px; 
+text-align: center;
+font-size: 70px;
+
+
+
+}
+
+#gameScreen {
+  display: none;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://web-vassets.ea.com/Assets/Richmedia/Image/Backgrounds/connect-4-bg-sm.jpg?cb=1412974791);
+  margin:0px;
+  font-family: Verdana;
+  background-size: cover;
+}
+
+.boardContainer {
+  padding-top: 40px;
+
+}
+
+table {
+  margin: 0 auto;
+  border-radius:70px;
+  border-left: 30px solid blue;
+  border-bottom:100px solid blue;
+  border-right: 30px solid blue;
+
+}
+td {
+
+  border: 5px solid black;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 8em;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+
+.container2, .playerTurn, .boardContainer {
+  text-align: center;
+}
+td:hover{
+  cursor:pointer;
+}
+
+
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.clear {
+  background: rgba(255, 255, 255, 0);;
+}
+
+#reset {
+  padding: 5px;
+  width: 200px;
+  font-size: 1.5em;
+ 
+  cursor: pointer;
+  background-color: #C2B193;
+  margin-top: 20px;
+}
+
+#reset:hover{
+  background: #b8bdee;
+  border-color: white;
+}

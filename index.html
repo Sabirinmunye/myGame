@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CONNECT 4</title>
+	<title>CONNECT THREE GAME</title>
+	<<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="game.js"></script> 
+  <link rel="stylesheet" type="text/css"  href="game.css">
 </head>
 <body>
-
+<div id="startScreen">
+      <button id="startButton">Start Game</button>
+ </div>
+<div id="gameScreen" class="container">
+	  		<div class="game container">
+	  			<h1>CONNECT THREE</h1>
+				  <h2 class = "playerTurn">BEGIN - Its Reds's Turn</h2>
+				  <table>
+				    <thead>
+				      <tr>
+				        <td box-coord="0"></td>
+				        <td box-coord="1"></td>
+				        <td box-coord="2"></td>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td box-coord="3"></td>
+				        <td box-coord="4"></td>
+				        <td box-coord="5"></td>
+				      </tr>
+				    </tbody>
+				    <tfoot>
+				      <tr>
+				        <td box-coord="6"></td>
+				        <td box-coord="7"></td>
+				        <td box-coord="8"></td>
+				      </tr>
+				    </tfoot>
+				  </table>
+				  <div class = "container2">
+				    <button id="reset">Clear Board</button>
+				  </div>
+				</div> 
+			</div>  
 </body>
 </html>
