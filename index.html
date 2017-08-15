@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CONNECT THREE GAME</title>
+	<title>CONNECT FOUR GAME</title>
 	<<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="game.js"></script> 
   <link rel="stylesheet" type="text/css"  href="game.css">
 </head>
 <body>
+<center>
 <div id="startScreen">
+	<h1>CONNECT FOUR</h1>
+	<div class= startInstructions>
+		<h2>WELCOME</h2>
+			"Welcome to greatest version yet of Connect 4! The aim of the game is to see which player can get four matching counters in a row, whether vertical, horizontal or diagonal! As long as its in a row, YOU WIN!
+			Press start to begin"
+	</div>
       <button id="startButton">Start Game</button>
  </div>
+</center>
 <div id="gameScreen" class="container">
 	  		<div class="game container">
-	  			<h1>CONNECT THREE</h1>
+	  			<h1>CONNECT FOUR</h1>
 				  <h2 class = "playerTurn">BEGIN - Its Reds's Turn</h2>
-				  <table>
-				    <thead>
-				      <tr>
-				        <td box-coord="0"></td>
-				        <td box-coord="1"></td>
-				        <td box-coord="2"></td>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td box-coord="3"></td>
-				        <td box-coord="4"></td>
-				        <td box-coord="5"></td>
-				      </tr>
-				    </tbody>
-				    <tfoot>
-				      <tr>
-				        <td box-coord="6"></td>
-				        <td box-coord="7"></td>
-				        <td box-coord="8"></td>
-				      </tr>
-				    </tfoot>
+				  
+				  	<table>
+				  		<thead>
+				  			<th>DROP</th>
+   							<th>DROP</th>
+   							<th>DROP</th>
+   							<th>DROP</th>
+   							<th>DROP</th>
+				  		</thead>
+			  			<tr>
+			        		<td box-coord="0"></td>
+			        		<td box-coord="1"></td>
+			        		<td box-coord="2"></td>
+			        		<td box-coord="3"></td>
+			        		<td box-coord="4"></td>
+			        	</tr>
+			      		<tr>
+			        		<td box-coord="5"></td>
+			       	 		<td box-coord="6"></td>
+			        		<td box-coord="7"></td>
+			        		<td box-coord="8"></td>
+			        		<td box-coord="9"></td>
+			      		</tr>
+			    		<tr>
+			    			<td box-coord="10"></td>
+			        		<td box-coord="11"></td>
+			        		<td box-coord="12"></td>
+			        		<td box-coord="13"></td>
+			        		<td box-coord="14"></td>
+			        	</tr>
+			        	<tr>
+			    			<td box-coord="15"></td>
+			        		<td box-coord="16"></td>
+			        		<td box-coord="17"></td>
+			        		<td box-coord="18"></td>
+			        		<td box-coord="19"></td>
+			      		</tr>
+			      		<tr>
+			    			<td box-coord="20"></td>
+			        		<td box-coord="21"></td>
+			        		<td box-coord="22"></td>
+			        		<td box-coord="23"></td>
+			        		<td box-coord="24"></td>
+			        	</tr>
 				  </table>
+				 
 				  <div class = "container2">
 				    <button id="reset">Clear Board</button>
 				  </div>

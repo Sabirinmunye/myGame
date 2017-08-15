@@ -1,22 +1,61 @@
 h1 {
 padding-top: 30px; 
 text-align: center;
-font-size: 70px;
+font-size: 80px;
+font-weight: bold;
+border-top: solid;
+border-bottom: solid;
+background-color: #B6EEFF;
+}
 
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 60px;
+  text-decoration: underline;
 
 
 }
+.dropButton {
+  border-radius: 30px;
+}
+.playerTurn {
+  border-style: solid;
+  background-color: #FFD400;
+
+}
+
+.startInstructions {
+  height: 60vh;
+  width: 60vw;
+  border-style: solid;
+  background-color: #FFD400;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 38px;
+
+}
+
+ #startButton, #reset {
+  height: 90px;
+  width: 280px;
+  background-color: red;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 
 #gameScreen {
   display: none;
 }
-.container {
+.container, #startScreen {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://web-vassets.ea.com/Assets/Richmedia/Image/Backgrounds/connect-4-bg-sm.jpg?cb=1412974791);
+  background-color: #D2DEFE;
   margin:0px;
-  font-family: Verdana;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   background-size: cover;
+
 }
 
 .boardContainer {
@@ -27,20 +66,22 @@ font-size: 70px;
 table {
   margin: 0 auto;
   border-radius:70px;
-  border-left: 30px solid blue;
-  border-bottom:100px solid blue;
-  border-right: 30px solid blue;
+  border-left: 80px solid blue;
+  border-bottom:150px solid blue;
+  border-right: 80px solid blue;
+  border-top: transparent;
 
 }
 td {
 
   border: 5px solid black;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   text-align: center;
   font-size: 8em;
   border-radius: 100px;
   padding: 10px;
+  background-color: #ECF2F9;
 }
 
 
@@ -60,19 +101,10 @@ td:hover{
   background: yellow;
 }
 
-.clear {
-  background: rgba(255, 255, 255, 0);;
+/*.clear {
+  background: rgba(255, 255, 255, 0);;*/
 }
 
-#reset {
-  padding: 5px;
-  width: 200px;
-  font-size: 1.5em;
- 
-  cursor: pointer;
-  background-color: #C2B193;
-  margin-top: 20px;
-}
 
 #reset:hover{
   background: #b8bdee;
