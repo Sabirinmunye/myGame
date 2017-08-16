@@ -1,49 +1,59 @@
-h1 {
+.header {
 padding-top: 30px; 
-text-align: center;
-font-size: 80px;
-font-weight: bold;
-border-top: solid;
-border-bottom: solid;
-background-color: #B6EEFF;
+align-self: center;
+animation-name: bounceIn;
+animation-duration: 0.5s;
+width: 60%;
+}
+
+#gameScreen .header {
+margin-left: 20%;
 }
 
 h2 {
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 60px;
+  font-family: "Courier New";
+  font-size: 70px;
   text-decoration: underline;
-
-
-}
-.dropButton {
-  border-radius: 30px;
+ 
 }
 .playerTurn {
   border-style: solid;
-  background-color: #FFD400;
-
+  background-color: red;
 }
 
 .startInstructions {
-  height: 60vh;
+  height: 30vh;
   width: 60vw;
   border-style: solid;
-  background-color: #FFD400;
+  background-color: #B6EEFF;
   text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 38px;
+  font-family: "Courier New";
+  font-size: 50px;
+  animation-name: bounceIn;
+  animation-duration: 0.5s;
+
+}
+.tableBack {
+  background-color: blue;
+  text-align: center;
+  display: inline-block;
 
 }
 
  #startButton, #reset {
-  height: 90px;
-  width: 280px;
-  background-color: red;
+  height: 120px;
+  width: 1000px;
+  background-color: #B6EEFF;
   font-size: 40px;
   cursor: pointer;
   margin-top: 20px;
+  align-items: center;
+  font-family: "courier new";
+  border-radius: 80px;
+  border-style: solid;
+  animation-name: bounceIn;
+  animation-duration: 0.5s;
 }
-
 
 #gameScreen {
   display: none;
@@ -51,47 +61,36 @@ h2 {
 .container, #startScreen {
   height: 100vh;
   width: 100vw;
-  background-color: #D2DEFE;
-  margin:0px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image: url(https://static1.squarespace.com/static/536d55f1e4b07afeea8cef61/t/53a1c960e4b074255904809d/1403111797968/cpex_background.png?format=1500w);
   background-size: cover;
 
 }
 
-.boardContainer {
-  padding-top: 40px;
-
-}
-
 table {
-  margin: 0 auto;
-  border-radius:70px;
+  align-self: center;   
+  border-radius:60px;
   border-left: 80px solid blue;
   border-bottom:150px solid blue;
   border-right: 80px solid blue;
-  border-top: transparent;
-
+ 
 }
 td {
-
   border: 5px solid black;
-  width: 120px;
-  height: 120px;
+  width: 280px;
+  height: 280px;
   text-align: center;
   font-size: 8em;
-  border-radius: 100px;
-  padding: 10px;
-  background-color: #ECF2F9;
+  border-radius: 150px;
+  background-color: #C1C5CA;
 }
-
 
 .container2, .playerTurn, .boardContainer {
   text-align: center;
 }
+
 td:hover{
   cursor:pointer;
 }
-
 
 .red {
   background: red;
@@ -101,12 +100,46 @@ td:hover{
   background: yellow;
 }
 
-/*.clear {
-  background: rgba(255, 255, 255, 0);;*/
-}
-
 
 #reset:hover{
   background: #b8bdee;
   border-color: white;
 }
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+@
