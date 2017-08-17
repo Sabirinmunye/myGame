@@ -2,27 +2,34 @@
 <html>
 <head>
 	<title>CONNECT FOUR GAME</title>
-	<<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="game.js"></script> 
+
   <link rel="stylesheet" type="text/css"  href="game.css">
+  
 </head>
 <body>
 <center>
-<div id="startScreen">
-	<h1>CONNECT FOUR</h1>
+	<div id="startScreen">
+		<h1>
+	 		<img class="header" src="CONNECT-FOUR.png">
+	 	</h1>
 	<div class= startInstructions>
 		<h2>WELCOME</h2>
 			"Welcome to greatest version yet of Connect 4! The aim of the game is to see which player can get four matching counters in a row, whether vertical, horizontal or diagonal! As long as its in a row, YOU WIN!
 			Press start to begin"
 	</div>
       <button id="startButton">Start Game</button>
- </div>
-</center>
-<div id="gameScreen" class="container">
+ 	</div>
+		</center>
+			<div id="gameScreen" class="container">
+				<h1>
+	 		<img class="header" src="CONNECT-FOUR.png">
+	 	</h1>
 	  		<div class="game container">
-	  			<h1>CONNECT FOUR</h1>
-				  <h2 class = "playerTurn">BEGIN - Its Reds's Turn</h2>
-				  
+	  		  <h2 class = "playerTurn">BEGIN - Its Reds's Turn</h2>
+	  		  <center>
+				  <div class=tableBack>
 				  	<table>
 				  		<thead>
 				  			<th>DROP</th>
@@ -67,9 +74,10 @@
 			        		<td box-coord="24"></td>
 			        	</tr>
 				  </table>
-				 
-				  <div class = "container2">
-				    <button id="reset">Clear Board</button>
+				 </div>
+				</center>
+				 <div class = "container2">
+				    <button id="reset">PLAY AGAIN</button>
 				  </div>
 				</div> 
 			</div>  
