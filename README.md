@@ -72,6 +72,8 @@ below is a screen shot of the game screens.
 
 ![screen shot 2017-08-17 at 12 23 27](https://user-images.githubusercontent.com/30622887/29412250-d01296f2-834f-11e7-93d8-cc10f4268732.png)
 
+![screen shot 2017-08-17 at 12 26 06](https://user-images.githubusercontent.com/30622887/29415646-967a6814-835b-11e7-949d-b758f3ec1fd6.png)
+
 
 		      
 
