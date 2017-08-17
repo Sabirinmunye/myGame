@@ -1,13 +1,13 @@
 .header {
-padding-top: 30px; 
-align-self: center;
-animation-name: bounceIn;
-animation-duration: 0.5s;
-width: 60%;
+  padding-top: 30px; 
+  align-self: center;
+  animation-name: bounceIn;
+  animation-duration: 0.5s;
+  width: 60%;
 }
 
 #gameScreen .header {
-margin-left: 20%;
+  margin-left: 20%;
 }
 
 h2 {
@@ -20,8 +20,8 @@ h2 {
   border-style: solid;
   background-color: red;
   border-radius: 100PX;
-  display:inline-block;
-  
+
+
 }
 
 .startInstructions {
