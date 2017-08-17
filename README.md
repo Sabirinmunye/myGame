@@ -68,5 +68,7 @@ for(var i = 0; i < winningCombinations.length; i++){
 Finally a function to reset the board, to allow players to play numerous times was at the end of the game. 
 below is a screen shot of the game screens.
 
-		      
+![screen shot 2017-08-17 at 12 23 27](https://user-images.githubusercontent.com/30622887/29412250-d01296f2-834f-11e7-93d8-cc10f4268732.png)
+
+![screen shot 2017-08-17 at 12 26 06](https://user-images.githubusercontent.com/30622887/29412351-37d0ed52-8350-11e7-8d1f-8fe7b4c15efb.png)
 
