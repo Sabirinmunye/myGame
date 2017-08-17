@@ -19,6 +19,9 @@ h2 {
 .playerTurn {
   border-style: solid;
   background-color: red;
+  border-radius: 100PX;
+  display:inline-block;
+  
 }
 
 .startInstructions {
