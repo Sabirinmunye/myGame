@@ -1,8 +1,8 @@
 $(function (event) {
-	
-	var audio = new Audio("slide.mp3");
 	// initial variables for the game
-	//find the game circles
+	// music variable
+	var audio = new Audio("slide.mp3");
+	// find game circles
 	var $boxes = $("td");
 	//show  player turn
 	var $turnText = $('.playerTurn');
@@ -16,7 +16,6 @@ $(function (event) {
 	var yellowMoves = [];
 
 	function gameStartSwitch() {
-
 		$('#startButton').click(function () {
 			audio.play();
 	    $('#startScreen').hide();
@@ -24,14 +23,15 @@ $(function (event) {
 		});
 	}
 
-// function to run  when page loads
+	// function to run  when page loads
 	function start() {
 		removeClear();
 		addRedandYellowListeners();
 		addResetListener();
 		gameStartSwitch()
 	}
-//Remove clears
+
+	//Remove clears
 	function removeClear(){
 		for (var i = $boxes.length -1; i>= 0; i--) {
 				var $box = $($boxes[i]);
@@ -39,7 +39,7 @@ $(function (event) {
 			}
 	}	
 
-//FUNCTION TO SET UP DROP BOX LISTENERS
+	//FUNCTION TO SET UP DROP BOX LISTENERS
 	function addDropListeners() {
 		for (var i=$boxes.length-1; i>=0;i--) {
 			var $box = $($boxes[i]);
@@ -71,7 +71,6 @@ $(function (event) {
 	}
 
 	function setBoxRedOrYellow($box) {
-
 		if(counter % 2 === 0){
 				redMoves.push(parseInt($box.attr('box-coord')));
 				$box.attr('class', 'red');
@@ -89,9 +88,9 @@ $(function (event) {
 		}
 
 	}
+
 	// function to add red or yellow for choices
 	function addRedorYellow() {
-
 		var $dropCell = $(this);
 		var $boxes = $('td');
 		var $colHead = $('th');
@@ -121,7 +120,6 @@ $(function (event) {
 		}
 
 	// function to check the player has won
-
 	function checkWin(movesArray, name){
 		
 		for(var i = 0; i < winningCombinations.length; i++){
@@ -152,7 +150,7 @@ $(function (event) {
 		$turnText.html("it is red's turn")
 		removeRedandYellowListeners();
 		start();
-		// addRedorYellow()
+	
 	}
 
 	start();

@@ -1,5 +1,7 @@
 #CONNECT FOUR GAME
 
+![](http://www.checkers.ws/board_games/connect_four_games/connect_four_two_players/connect_4.gif)
+
 The aim of the project was to design a browser based gme, using html, css and Javascript. Connect Four is a two player connection game, where the each plyer is assigned a coloured counter. The players take it in turns to drop counters, where the counters fall firstly into the bottom row of the 5x5 grid, and after that occupy the next available space available in the above rows of the column. The aim of the game is to try and get four counters alligned next to eachother either vertically, horizontally or diagonally.
 
 ##How to get started 
@@ -70,5 +72,12 @@ below is a screen shot of the game screens.
 
 ![screen shot 2017-08-17 at 12 23 27](https://user-images.githubusercontent.com/30622887/29412250-d01296f2-834f-11e7-93d8-cc10f4268732.png)
 
+
 ![screen shot 2017-08-17 at 12 26 06](https://user-images.githubusercontent.com/30622887/29412351-37d0ed52-8350-11e7-8d1f-8fe7b4c15efb.png)
+
+![screen shot 2017-08-17 at 12 26 06](https://user-images.githubusercontent.com/30622887/29415646-967a6814-835b-11e7-949d-b758f3ec1fd6.png)
+
+
+		      
+
 
